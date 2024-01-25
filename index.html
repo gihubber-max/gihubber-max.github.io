@@ -3,97 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Token</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
-        /* Add custom styles here */
         body {
-            font-family: 'Arial', sans-serif;
-        }
-        .hero-section {
-            background: url('your-background-image.jpg') center/cover no-repeat;
+            background-color: #111;
             color: #fff;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 100px 0;
+        }
+
+        .hero-section {
+            background: url('your_background_image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .cta-button {
+            margin-top: 20px;
         }
     </style>
+    <title>Bruno Meme Token</title>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Bruno Token</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
-                <li class="nav-item"><a class="nav-link" href="#faucet">Faucet</a></li>
-                <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
-                <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bruno Token</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faucet">Faucet</a></li>
+            <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <h1>Bruno Token</h1>
-            <p>Your meme-themed cryptocurrency.</p>
-            <a href="#faucet" class="btn btn-primary btn-lg">Get Tokens</a>
-        </div>
-    </section>
+<section id="home" class="hero-section">
+    <div>
+        <h1>Bruno Meme Token</h1>
+        <p>Your catchy slogan or description here.</p>
+        <button class="btn btn-primary cta-button">Get Tokens</button>
+    </div>
+</section>
 
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class="container">
-        <h2>Tokenomics</h2>
-        <p>Placeholder content for Tokenomics section.</p>
-    </section>
+<section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <!-- Add your tokenomics content here -->
+</section>
 
-    <!-- Faucet Section -->
-    <section id="faucet" class="container">
-        <h2>Faucet</h2>
-        <p>Placeholder content for Faucet section.</p>
-    </section>
+<section id="faucet">
+    <h2>Faucet</h2>
+    <!-- Add your faucet content here -->
+</section>
 
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="container">
-        <h2>Roadmap</h2>
-        <p>Placeholder content for Roadmap section.</p>
-    </section>
+<section id="roadmap">
+    <h2>Roadmap</h2>
+    <!-- Add your roadmap content here -->
+</section>
 
-    <!-- Community Section -->
-    <section id="community" class="container">
-        <h2>Community</h2>
-        <p>Placeholder content for Community section.</p>
-    </section>
+<section id="community">
+    <h2>Community</h2>
+    <!-- Add your community content here -->
+</section>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Smooth Scroll JS -->
-    <script>
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
         });
-    </script>
+    });
+</script>
 
 </body>
 </html>
